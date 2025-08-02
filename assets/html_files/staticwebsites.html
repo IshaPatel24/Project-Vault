@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Websites - Project Vault</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌐Static Websites</h1>
+    <a href="website.html" class="back-button">← Back to Home</a>
+  </header>
+  <main class="category-container">
+    <div class="category-card">
+      <h3>NetFlix</h3>
+      <p>Website offering movies.</p>
+      <a href="../../website/Static_Websites/Netflix/index.html" class="play-button">View Project</a>
+      <a href="https://github.com/pavitraag/Project-Vault/tree/main/website/Static_Websites/NetFlix" class="play-button">View Code <i class="fab fa-github"></i></a>
+    </div>
+    <div class="category-card">
+      <h3>3D_Rotate_Tube</h3>
+      <p>Website offering movies.</p>
+      <a href="../../website/Static_Websites/3D_Rotate_Tube/index.html" class="play-button">View Project</a>
+      <a href="https://github.com/pavitraag/Project-Vault/tree/main/website/Static_Websites/3D_Rotate_Tube" class="play-button">View Code <i class="fab fa-github"></i></a>
+    </div>
+  
+    <!-- Add more project cards -->
+    <div class="category-card">
+      <h3>Amazon</h3>
+      <p>Website for Online shopping.</p>
+      <a href="../../website/Static_Websites/Amazon/index.html" class="play-button">View Project</a>
+    </div>
+    <div class="category-card">
+  <h3>HostWise</h3>
+  <p>Website for Rentals></p>
+  <a href="../../website/Static_Websites/hostwise-site/index.html" class="play-button" target="_blank">🌐 View Project</a>
+  <a href="https://github.com/abinayagoudjandhyala/Project-Vault/tree/add-hostwise-site/website/Static_Websites/hostwise-site" class="play-button" target="_blank">💻 View Code</a>
+</div>
+
+  </main>
+  <div id="footer-placeholder"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-content">
+      <h2>About Simon Says</h2>
+      <p>
+        <strong>Simon Says</strong> is a classic memory and reaction game that
+        challenges players to follow instructions — but only when Simon says!
+      </p>
+
+      <ul>
+        <li>
+          <b>🧠 Objective:</b> Follow commands only when they begin with the
+          phrase "Simon says."
+        </li>
+        <li>
+          <b>🚫 Trick Rule: </b> If you follow a command without "Simon says,"
+          you're out!
+        </li>
+        <li>
+          <b>👂 Focus:</b> The game tests your listening skills and attention to
+          detail.
+        </li>
+        <li>
+          <b>🏃‍♂️ Fast-paced Fun:</b> Ideal for group play, parties, or as a quick
+          mental warm-up.
+        </li>
+        <li>
+          <b>🎯 Improves:</b> Concentration, reflexes, and decision-making under
+          pressure.
+        </li>
+      </ul>
+
+      <p>
+        Whether played physically or digitally, Simon Says is a timeless game
+        enjoyed by all ages.
+      </p>
+      <button id="displayBtn" style="width: fit-content; padding: 10px 15px">
+        Let's Play
+      </button>
+    </div>
+    <div class="main-content">
+      <h2 class="heading">Simon Says Game</h2>
+      <div class="outerBox">
+        <h3>(Press any key to start)</h3>
+        <h4
+          style="
+            font-size: 24px;
+            color: rgb(11, 6, 6);
+            text-shadow: 0px 0px 10px rgb(113, 33, 33);
+          "
+        >
+          Score:
+        </h4>
+        <!--Creating four box in the playground-->
+        <div class="playground">
+          <div
+            class="box"
+            id="box1"
+            style="
+              background: linear-gradient(
+                #9e1916,
+                #cd1c18,
+                #e3231f,
+                #f5423e,
+                #fd6f6c
+              );
+            "
+          ></div>
+          <div
+            class="box"
+            id="box2"
+            style="
+              background: linear-gradient(#1c791d, #32cd32, #54d454, #8de88d);
+            "
+          ></div>
+          <div
+            class="box"
+            id="box3"
+            style="
+              background: linear-gradient(
+                #0047ab,
+                #004dd7,
+                #0076ff,
+                #35c1ff,
+                #aee6ff
+              );
+            "
+          ></div>
+          <div
+            class="box"
+            id="box4"
+            style="
+              background: linear-gradient(#edb505, #fdd017, #ffe345, #fff289);
+            "
+          ></div>
+        </div>
+        <!--Help-->
+        <div class="button">
+          <button class="help">Help</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="nav-link">
+        <a href="../../index.html">Home</a>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

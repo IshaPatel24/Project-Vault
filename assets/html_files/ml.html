@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Projects - Project Vault</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../css_files/ml.css" />
+  <link rel="stylesheet" href="../../style.css">
+
+  <title>Websites - Project Vault</title>
+  <link rel="stylesheet" href="/Project-Vault/style.css" />
+
+</head>
+<body>
+      <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="nav-logo">Project Vault</div>
+            <div class="mobile-menu-close" id="mobileMenuClose">&times;</div>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="../../index.html" class="mobile-menu-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="./aboutus.html" class="mobile-menu-link"><i class="fa-solid fa-circle-info"></i> About Us</a>
+
+            <div class="mobile-submenu">
+                <div class="mobile-menu-link submenu-toggle"><i class="fa-solid fa-icons"></i> 
+                   Components <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                </div>
+                <div class="submenu-items">
+                    <a href="./website.html" class="mobile-menu-link">Webfolio</a>
+                    <a href="./games.html" class="mobile-menu-link">Games</a>
+                    <a href="./ml.html" class="mobile-menu-link">ML Projects</a>
+                    <a href="./techStack.html" class="mobile-menu-link"><i class="fa-solid fa-search"></i> by Tech Stack</a>
+                </div>
+            </div>
+
+            <a href="../../faq.html" class="mobile-menu-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+            <a href="./discussion.html" class="mobile-menu-link"><i class="fa-solid fa-comment"></i> Forum</a>
+            <a href="./contact.html" class="mobile-menu-link"><i class="fa-solid fa-phone"></i> Contact Us</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">Project Vault</div>
+
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-right">
+                <a href="../../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="./aboutus.html" class="nav-link active"><i class="fa-solid fa-circle-info"></i> About Us</a>
+                <div class="dropdown">
+                    <div class="dropdown-toggle nav-link"><i class="fa-solid fa-icons"></i> Components ▾</div>
+                    <div class="dropdown-content">
+                        <a href="./website.html">Webfolio</a>
+                        <a href="./games.html">Games</a>
+                        <a href="./ml.html">ML Projects</a>
+                        <a href="./techStack.html"><i class="fa-solid fa-search"></i> by Tech Stack</a>
+                    </div>
+                </div>
+                <a href="../../faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                <a href="./discussion.html" class="nav-link"><i class="fa-solid fa-comment"></i> Forum</a>
+                <a href="./contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </div>
+        </div>
+        <div>
+          <a href="../../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+        </div>
+    </nav>
+  <header class="ml-header">
+    <div class="header-content">
+      <h1> ML Projects</h1>
+      <p>Cutting-edge machine learning applications and AI-powered solutions for real-world problems</p>
+    </div>
+
+  </header>
+
+  <main class="ml-main">
+    <div class="projects-container">
+      <div class="project-card fade-in" style="animation-delay: 0.1s">
+        <div class="project-icon">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <div class="project-content">
+          <h3>Restaurant Recommender</h3>
+          <p>ML-based recommendation system using KNN and clustering algorithms to suggest restaurants based on user preferences and dining history.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">KNN</span>
+            <span class="tech-tag">Clustering</span>
+          </div>
+          <a href="https://github.com/pavitraag/Project-Vault/blob/main/ML/Restaurant_Recommendation/Restaurant_Reservation.ipynb" 
+             class="view-code-btn" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" style="animation-delay: 0.2s">
+        <div class="project-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="project-content">
+          <h3>Anemia Prediction</h3>
+          <p>Machine learning model that predicts anemia risk based on various health parameters and blood test results.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Classification</span>
+            <span class="tech-tag">Healthcare</span>
+          </div>
+          <a href="https://github.com/pavitraag/Project-Vault/blob/main/ML/Anemia_prediction/Anemia_prediction.ipynb" 
+             class="view-code-btn" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in" style="animation-delay: 0.2s">
+        <div class="project-icon">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="project-content">
+          <h3>Fake News Classifier</h3>
+          <p>Machine learning model that predicts whether a given news article is real or fake based on its textual content.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Classification</span>
+          </div>
+          <a href="https://github.com/kaurroopak/Project-Vault/blob/MLmodels/ML/Fake_News_Classifier/Fake_News_Classifier.ipynb" 
+             class="view-code-btn" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+
+ 
+
+
+    <div class="category-card">
+      <h3>Anemia Prediction</h3>
+      <p>Predicts Anemia</p>
+      <a href="https://github.com/VEERESH069/Project-Vault/blob/prediction_pipeline_feature_add/ML/Anemia_prediction/anemia_prediction_pipeline.ipynb"  class = "play-button" target="_blank">View Code</a>
+
+    </div>
+
+   <div class="category-card">
+    <h3>Loan Approval Predictor</h3>
+    <p>Predicts whether a loan will be approved based on applicant data</p>
+    <a href="https://github.com/roshni866/Project-Vault/blob/loan-approval-section/ML/Loan_approval_predictor/loan_predictions.ipynb" class="play-button" target="_blank">View Code</a>
+  </div>
+  <div class="category-card">
+    <h3>Student Burnout Detector</h3>
+    <p>Predicts student burnout based on various factors</p>
+    <a href="https://github.com/roshni866/Project-Vault/blob/student_burnout/ML/Student_burnout_detector/predict.ipynb" class="play-button" target="_blank">View Code</a>
+  </div>
+    <!-- Add more project cards -->
+
+
+  </main>
+  
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <h1 class="heading">Project Vault</h1>
+                <p>
+                    Project Vault is a curated collection of diverse projects ranging
+                    from stunning websites and interactive games to intelligent machine
+                    learning applications. It serves as a one-stop destination to
+                    explore, learn, and get inspired by practical implementations of web
+                    technologies and AI solutions.
+                </p>
+                <div class="social">
+                    <a
+                        class="message"
+                        href="mailto:pavitraagopi@gmail.com"
+                        target="_blank"
+                        aria-label="Email"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a
+                        class="linkedin"
+                        href="https://www.linkedin.com/in/pavitraa-g/"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                        class="github"
+                        href="https://www.github.com/pavitraag"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h1 class="heading">Quick Links</h1>
+                <ul class="footer-ul">
+                    <li>
+                        <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html"><i class="fa-solid fa-circle-info"></i> About</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-icons"></i> Components</a>
+                    </li>
+                    <li>
+                        <a href="../../faq.html"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                    </li>
+                    <li>
+                      <a href="./discussion.html"><i class="fa-solid fa-comment"></i> Forum</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section send-message">
+                <h1 class="heading">Keep In Touch</h1>
+                <form id="contact-form" name="Project Vault Contact" autocomplete="off">
+                    <div class="form-group group1">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your email"
+                            autocomplete="email"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Your message"
+                            required
+                        ></textarea>
+                        <button type="submit">
+                            <span class="button-text">SEND MESSAGE</span>
+                            <div class="loading" style="display: none"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Created By Pavitraa ❤️ | © <span id="currentYear">2024</span> All Rights Reserved
+        </div>
+    </footer>
+<script src="../../script.js"></script>
+  <script src="../js_files/ml.js"></script>
+</body>
+</html>

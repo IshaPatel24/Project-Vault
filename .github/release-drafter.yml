@@ -1,0 +1,33 @@
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+categories:
+  - title: '🚀 Feature Additions'
+    labels:
+      - 'Feature Add'
+      - 'feature'
+  - title: '🎨 UI Enhancements'
+    labels:
+      - 'UI'
+  - title: '🧠 UX Improvements'
+    labels:
+      - 'UX'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bug'
+  - title: '📚 Documentation'
+    labels:
+      - 'documentation'
+  - title: '🛠 Maintenance'
+    labels:
+      - 'chore'
+      - 'refactor'
+
+change-template: '- $TITLE by @$AUTHOR in PR [#$NUMBER](https://github.com/pavitraag/Project-Vault/pull/$NUMBER)'
+
+template: |
+  ## 🚀 What's Changed
+
+  $CHANGES
+
+  Thank you to all our amazing contributors! 🎉

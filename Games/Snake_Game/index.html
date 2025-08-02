@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+         body{
+            margin:0px;
+            padding:0px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: palegreen;
+        }
+        canvas{
+            box-shadow: black 20px 10px 50px;
+
+        }
+
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    color: white;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .overlay button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.2s;
+  }
+
+  .overlay button:hover {
+    background-color: #388E3C;
+  }
+
+  #startBtn, #pauseBtn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1px;
+    background-color: #222;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  </style>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <canvas id="game" width="400" height="400"></canvas>
+ 
+    <h2 id="instruction" style="margin-top: 40px;">Use the arrow keys to control the snake.</h2>
+    <p id="note" style="margin-top: 5px;">Speed increases each time you eat an apple! Good Luck!</p>
+    <button id="startBtn" style="margin-top: 10px;">Start Game</button>
+    <button id="pauseBtn" style="margin-top: 40px; display:none;">Pause</button>
+
+<div id="gameOverOverlay" class="overlay hidden">
+  <h2>Game Over!</h2>
+  <button id="restartBtn">Restart</button>
+  <button id="exitBtn">Exit</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
